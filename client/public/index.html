@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="<%= BASE_URL %>favicon.ico">
+	<title><%= htmlWebpackPlugin.options.title %></title>
+	<script src="https://www.jq22.com/jquery/jquery-2.1.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="markdown.css">
+	<link rel="stylesheet" type="text/css" href="css/hover.css" />
+	<!-- 自定义web字体 -->
+	<!-- <script type="text/javascript" src="http://cdn.repository.webfont.com/wwwroot/js/wf/youziku.api.min.js"></script>
+	<script type="text/javascript">
+	   $webfont.load("body", "54ddc19d244541e39fbad815f5d078c8", "stfzjjgangbikaishu");
+	   /*$webfont.load("#id1,.class1,h1", "54ddc19d244541e39fbad815f5d078c8", "stfzjjgangbikaishu");*/
+	   /*．．．*/
+	   $webfont.draw();
+	</script> -->
+
+	<style>
+		img {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		code {
+			background-color: red;
+		}
+
+		body {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		html {
+			font-size: 12px;
+			background-color: #f4f5f5;
+			overflow: scroll;
+		}
+
+		.roll {
+			background-color: #007fff;
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 1025;
+			height: 2px;
+			transition: width 1s;
+		}
+
+		/**********滚动条***************/
+		/*整体部分*/
+		::-webkit-scrollbar {
+			width: 5px;
+			height: 5px;
+		}
+
+		/*滑动轨道*/
+		::-webkit-scrollbar-track {
+			border-radius: 0px;
+			background: none;
+		}
+
+		/*滑块*/
+		::-webkit-scrollbar-thumb {
+			border-radius: 5px;
+			background-color: #007fff
+		}
+
+		/*滑块效果*/
+		::-webkit-scrollbar-thumb:hover {
+			border-radius: 5px;
+			background-color: rgba(85, 85, 85, 0.4);
+		}
+	</style>
+</head>
+
+<body>
+	<noscript>
+		<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+			Please enable it to continue.</strong>
+	</noscript>
+	<!-- 顶部滚动进度条 -->
+	<div class="roll"></div>
+	<div id="app"></div>
+	<!-- built files will be auto injected -->
+</body>
+<script src='./js/roll.js'></script>
+
+</html>
