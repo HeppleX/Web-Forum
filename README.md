@@ -11,6 +11,8 @@
 
 进入 client 文件夹:
 
+1. 下载安装Node.JS。
+
 1. npm install 下载依赖，完成后执行 npm run serve 就可以启动代码。
 
 2. 或者 npm i -g yarn 安装 yarn 后, 执行 yarn 安装依赖。完成后执行 yarn run serve 启动代码。
